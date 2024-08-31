@@ -33,9 +33,19 @@ class MainActivity : AppCompatActivity() {
         Log.i(tag,"MainActivity-->onResume")
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.i(tag,"MainActivity-->onPause")
+    }
+
     override fun onStop() {
         super.onStop()
         Log.i(tag,"MainActivity-->onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i(tag,"MainActivity-->onDestroy")
     }
 
 
